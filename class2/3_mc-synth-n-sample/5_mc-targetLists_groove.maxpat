@@ -9,8 +9,19 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ -33.0, 92.0, 1084.0, 646.0 ],
+        "rect": [ 134.0, 172.0, 1084.0, 646.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-8",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 56.0, 203.0, 29.5, 22.0 ],
+                    "text": "0."
+                }
+            },
             {
                 "box": {
                     "id": "obj-5",
@@ -368,18 +379,16 @@
                     "destination": [ "obj-1", 0 ],
                     "source": [ "obj-62", 0 ]
                 }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-1", 0 ],
+                    "source": [ "obj-8", 0 ]
+                }
             }
         ],
         "parameters": {
             "obj-2": [ "mc.live.gain~", "mc.live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0

@@ -9,8 +9,31 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 236.0, 87.0, 914.0, 764.0 ],
+        "rect": [ 134.0, 172.0, 914.0, 764.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-13",
+                    "linecount": 11,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 673.0, 260.5, 150.0, 154.0 ],
+                    "presentation_linecount": 11,
+                    "text": "mc.voiceallocator~ is a realtively new way to create \"polyphony\" in Max relying on the \"mc\" prefix objects (mult-channel)\n\nhere we use it with mc.target to create 24 amplitude envelopes using the graphical function object"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-10",
+                    "linecount": 3,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 667.0, 176.0, 150.0, 47.0 ],
+                    "text": "this is polyphonic: more than one note can be heard at the same time"
+                }
+            },
             {
                 "box": {
                     "id": "obj-8",
@@ -474,6 +497,14 @@
         ],
         "parameters": {
             "obj-39": [ "mc.live.gain~", "mc.live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

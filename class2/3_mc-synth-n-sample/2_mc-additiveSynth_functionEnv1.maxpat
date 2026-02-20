@@ -13,6 +13,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-9",
+                    "linecount": 6,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 738.0, 473.0, 150.0, 87.0 ],
+                    "text": "this is monophonic: one one note at a time, even though multiple cycle~ oscillators are used to create the timbre of the sound"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-53",
                     "maxclass": "newobj",
                     "numinlets": 2,
@@ -527,6 +538,14 @@
         ],
         "parameters": {
             "obj-39": [ "mc.live.gain~", "mc.live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

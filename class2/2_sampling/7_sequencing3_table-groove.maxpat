@@ -13,6 +13,37 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-44",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 111.66666666666663, 313.0, 150.0, 20.0 ],
+                    "text": "output value"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-42",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 111.66666666666666, 233.0, 150.0, 20.0 ],
+                    "text": "index"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-36",
+                    "linecount": 4,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 177.16666666666663, 232.0, 150.0, 60.0 ],
+                    "text": "table is used to create \"linear drumming\" -- no sounds are \"struck\" simultaneously "
+                }
+            },
+            {
+                "box": {
                     "id": "obj-40",
                     "linecount": 2,
                     "maxclass": "comment",
@@ -121,7 +152,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 286.0, 274.0, 35.0, 23.0 ],
+                    "patching_rect": [ 221.5, 329.0, 35.0, 23.0 ],
                     "text": "read"
                 }
             },
@@ -134,7 +165,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 286.0, 244.0, 36.0, 23.0 ],
+                    "patching_rect": [ 221.5, 299.0, 36.0, 23.0 ],
                     "text": "write"
                 }
             },
@@ -789,7 +820,7 @@
                         "showeditor": 0,
                         "size": 16
                     },
-                    "showeditor": 1,
+                    "showeditor": 0,
                     "text": "table rhythm_seq1"
                 }
             }
@@ -1242,6 +1273,14 @@
             "obj-53": [ "live.gain~[1]", "live.gain~", 0 ],
             "obj-59": [ "live.gain~[2]", "live.gain~", 0 ],
             "obj-65": [ "live.gain~[3]", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0
