@@ -43,7 +43,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 105.0, 343.4528461098671, 74.0, 47.0 ],
-                    "presentation_linecount": 3,
                     "text": "adjust range to 1-32"
                 }
             },
@@ -54,7 +53,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 120.0, 313.0, 74.0, 20.0 ],
-                    "presentation_linecount": 3,
                     "text": "output value"
                 }
             },
@@ -97,7 +95,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 893.0, 51.0, 152.0, 33.0 ],
-                    "presentation_linecount": 2,
                     "text": "send specfic number of sequential \"bangs\""
                 }
             },
@@ -108,7 +105,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 994.0, 98.0, 150.0, 33.0 ],
+                    "patching_rect": [ 994.0, 98.0, 152.0, 33.0 ],
                     "text": "create random numbers in a specified range"
                 }
             },
@@ -648,7 +645,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-3", 0 ],
-                    "midpoints": [ 69.31308364868164, 562.3515625, 431.08984375, 556.9765625, 431.08984375, 386.53125, 503.8925195336342, 386.53125 ],
+                    "midpoints": [ 69.31308364868164, 562.3515625, 431.08984375, 562.3515625, 431.08984375, 386.53125, 503.8925195336342, 386.53125 ],
                     "source": [ "obj-30", 0 ]
                 }
             },
@@ -741,14 +738,6 @@
         ],
         "parameters": {
             "obj-11": [ "mc.live.gain~", "mc.live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0

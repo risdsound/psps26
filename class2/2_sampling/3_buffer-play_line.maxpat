@@ -268,7 +268,8 @@
                     "patching_rect": [ 239.0, 334.0, 137.0, 41.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_initial": [ 0 ],
+                            "parameter_initial": [ -70.0 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "gain",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
@@ -425,14 +426,6 @@
         ],
         "parameters": {
             "obj-16": [ "gain", "gain", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0

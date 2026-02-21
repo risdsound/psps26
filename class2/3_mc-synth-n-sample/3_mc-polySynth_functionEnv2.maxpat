@@ -19,7 +19,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 673.0, 260.5, 150.0, 154.0 ],
-                    "presentation_linecount": 11,
                     "text": "mc.voiceallocator~ is a realtively new way to create \"polyphony\" in Max relying on the \"mc\" prefix objects (mult-channel)\n\nhere we use it with mc.target to create 24 amplitude envelopes using the graphical function object"
                 }
             },
@@ -200,6 +199,8 @@
                     "patching_rect": [ 125.0, 347.0, 136.0, 179.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
+                            "parameter_initial": [ -70.0 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "mc.live.gain~",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
@@ -497,14 +498,6 @@
         ],
         "parameters": {
             "obj-39": [ "mc.live.gain~", "mc.live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0

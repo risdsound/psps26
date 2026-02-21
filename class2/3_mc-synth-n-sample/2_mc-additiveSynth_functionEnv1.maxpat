@@ -133,6 +133,8 @@
                     "patching_rect": [ 125.0, 352.8846271634102, 136.0, 59.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
+                            "parameter_initial": [ -70.0 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "mc.live.gain~",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
@@ -538,14 +540,6 @@
         ],
         "parameters": {
             "obj-39": [ "mc.live.gain~", "mc.live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0

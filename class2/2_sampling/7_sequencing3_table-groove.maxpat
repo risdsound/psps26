@@ -306,6 +306,8 @@
                     "patching_rect": [ 510.0, 626.0, 69.0, 100.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
+                            "parameter_initial": [ -70.0 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "live.gain~[3]",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
@@ -376,6 +378,8 @@
                     "patching_rect": [ 360.0, 626.0, 69.0, 100.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
+                            "parameter_initial": [ -70.0 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "live.gain~[2]",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
@@ -458,6 +462,8 @@
                     "patching_rect": [ 210.0, 626.0, 69.0, 100.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
+                            "parameter_initial": [ -70.0 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "live.gain~[1]",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
@@ -550,6 +556,8 @@
                     "patching_rect": [ 59.99999999999997, 626.0, 69.0, 100.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
+                            "parameter_initial": [ -70.0 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "live.gain~",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
@@ -1273,14 +1281,6 @@
             "obj-53": [ "live.gain~[1]", "live.gain~", 0 ],
             "obj-59": [ "live.gain~[2]", "live.gain~", 0 ],
             "obj-65": [ "live.gain~[3]", "live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
