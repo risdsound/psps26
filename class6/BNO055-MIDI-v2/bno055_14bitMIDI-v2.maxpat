@@ -13,6 +13,16 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-104",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 270.5, 81.5, 165.0, 20.0 ],
+                    "text": "choose BNO055 Motion MIDI"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-101",
                     "maxclass": "newobj",
                     "numinlets": 0,
