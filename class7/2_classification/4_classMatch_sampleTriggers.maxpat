@@ -116,6 +116,8 @@
                     "patching_rect": [ 532.0, 552.0, 136.0, 41.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
+                            "parameter_initial": [ -70.0 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "live input",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
