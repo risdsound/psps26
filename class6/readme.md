@@ -6,6 +6,7 @@
 
 This Arduino sketch turns an Adafruit QT Py M0 connected to an Adafruit BNO055 orientation sensor into a USB MIDI motion controller. The device sends motion data as MIDI Control Change messages over USB, which can be received in Max/MSP or other MIDI software. These instructions describe how to set up the Arduino environment, install the required libraries, open the sketch, and upload it to the board.
 
+---
 **Hardware Required:**
 
 *   Adafruit QT Py M0 (SAMD21)
@@ -14,12 +15,12 @@ This Arduino sketch turns an Adafruit QT Py M0 connected to an Adafruit BNO055 o
     
 *   USB cable to connect the QT Py to the computer
     
-
+---
 **Install the Arduino IDE**
 
 *   Download and install the Arduino IDE: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
     
-
+---
 **Install Adafruit SAMD Board Support**
 
 *   Open the Arduino IDE.
@@ -30,7 +31,7 @@ This Arduino sketch turns an Adafruit QT Py M0 connected to an Adafruit BNO055 o
     
 *   Click OK.
     
-
+---
 **Install the QT Py Board Definition**
 
 *   Open: Tools → Board → Boards Manager
@@ -39,12 +40,12 @@ This Arduino sketch turns an Adafruit QT Py M0 connected to an Adafruit BNO055 o
     
 *   Install the package.
     
-
+---
 **Select the Board**
 
 *   After installation, select the correct board: Tools → Board → Adafruit SAMD Boards → QT Py M0 (SAMD21)
     
-
+---
 **Install Required Libraries**
 
 *   Open the Library Manager: Sketch → Include Library → Manage Libraries
@@ -68,14 +69,14 @@ These libraries are required for:
     
 *   MIDI message formatting
     
-
+---
 **Open the Sketch**
 
 *   Open the sketch file (for example): BNO055\_Motion\_MIDI.ino
     
 *   Open it in Arduino: File → Open → BNO055\_Motion\_MIDI.ino
     
-
+---
 **Upload the Firmware**
 
 *   Connect the QT Py M0 to the computer using USB.
@@ -88,7 +89,7 @@ These libraries are required for:
     
 *   The sketch will compile and upload to the board.
     
-
+---
 **USB MIDI Device**
 
 *   After uploading, the board will appear as a USB MIDI device named: “BNO055 Motion MIDI”
