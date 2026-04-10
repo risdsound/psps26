@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 76.0, 401.0, 1690.0, 768.0 ],
+        "rect": [ 34.0, 180.0, 1444.0, 768.0 ],
         "boxes": [
             {
                 "box": {
@@ -562,7 +562,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1491.0, 250.0, 52.0, 20.0 ],
-                    "text": "jerk"
+                    "text": "bump"
                 }
             },
             {
@@ -1619,7 +1619,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-36",
-                    "items": [ "IAC Driver Bus 1", ",", "828 MIDI", ",", "828 COM", ",", "BNO055 Motion MIDI", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
