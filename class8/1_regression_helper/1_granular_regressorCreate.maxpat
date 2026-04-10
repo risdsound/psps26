@@ -9,20 +9,29 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 46.0, 111.0, 1408.0, 823.0 ],
+        "rect": [ 15.0, 100.0, 1408.0, 823.0 ],
         "boxes": [
             {
                 "box": {
-                    "format": 6,
-                    "id": "obj-87",
-                    "maxclass": "flonum",
+                    "id": "obj-81",
+                    "maxclass": "comment",
                     "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 1040.114159544309, 192.78080797195435, 50.0, 22.0 ],
+                    "numoutlets": 0,
+                    "patching_rect": [ 704.0, 191.0, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 491.0, 184.27396094799042, 50.0, 22.0 ]
+                    "presentation_rect": [ 775.3424093723297, 185.27396094799042, 38.0, 20.0 ],
+                    "text": "on/off"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-70",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "patching_rect": [ 943.0958219766617, 347.9451801776886, 22.0, 22.0 ],
+                    "text": "t 1"
                 }
             },
             {
@@ -109,17 +118,6 @@
                     "presentation": 1,
                     "presentation_rect": [ 735.3355623483658, 8.000000238418579, 95.0, 27.0 ],
                     "text": "TRAINING"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-142",
-                    "maxclass": "newobj",
-                    "numinlets": 0,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 218.79166328907013, 330.04623234272003, 31.0, 22.0 ],
-                    "text": "r vol"
                 }
             },
             {
@@ -1985,56 +1983,12 @@
             },
             {
                 "box": {
-                    "id": "obj-69",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "signal" ],
-                    "patching_rect": [ 208.29166328907013, 437.0, 29.5, 22.0 ],
-                    "text": "*~"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-70",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 218.79166328907013, 357.4434906244278, 45.0, 22.0 ],
-                    "text": "$1 100"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-38",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 2,
-                    "outlettype": [ "signal", "bang" ],
-                    "patching_rect": [ 218.79166328907013, 390.3202005624771, 34.0, 22.0 ],
-                    "text": "line~"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-72",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "signal" ],
-                    "patching_rect": [ 91.29166328907013, 432.0, 29.5, 22.0 ],
-                    "text": "*~"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-64",
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "float" ],
-                    "patching_rect": [ 941.0958219766617, 238.35614705085754, 40.0, 22.0 ],
+                    "patching_rect": [ 943.0958219766617, 431.87668085098267, 40.0, 22.0 ],
                     "text": "* 127."
                 }
             },
@@ -2772,46 +2726,21 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 941.0958219766617, 191.78080797195435, 24.0, 24.0 ],
+                    "patching_rect": [ 943.0958219766617, 384.87668085098267, 24.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 592.0, 183.27396094799042, 24.0, 24.0 ]
+                    "presentation_rect": [ 743.8355623483658, 183.27396094799042, 24.0, 24.0 ]
                 }
             },
             {
                 "box": {
-                    "hidden": 1,
                     "id": "obj-44",
-                    "linecount": 2,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 536.9862623214722, 713.6078482866287, 219.0, 33.0 ],
-                    "text": "OR drag and drop sound files on waveform "
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-39",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 438.6666797399521, 90.6666693687439, 99.0, 20.0 ],
+                    "patching_rect": [ 536.9862623214722, 713.6078482866287, 219.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 164.83504438400269, 172.40409803390503, 176.71231591701508, 20.0 ],
-                    "text": "record into buffer"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-33",
-                    "maxclass": "toggle",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 406.66667878627777, 89.33333599567413, 24.0, 24.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 113.09531855583191, 157.53423511981964, 49.739725828170776, 49.739725828170776 ]
+                    "presentation_rect": [ 58.76288330554962, 215.06847751140594, 344.0, 20.0 ],
+                    "text": "Drag and drop sound files on waveform "
                 }
             },
             {
@@ -2826,19 +2755,6 @@
                     "presentation_linecount": 2,
                     "presentation_rect": [ 56.70102775096893, 39.17525553703308, 244.0, 33.0 ],
                     "text": "NOTE: From File > Show Package Magager\ninstall: RNBO Synth Building Blocks"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-20",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "signal", "signal" ],
-                    "patching_rect": [ 88.54166328907013, 251.0, 35.0, 22.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 64.26288330554962, 165.38354969024658, 35.0, 22.0 ],
-                    "text": "adc~"
                 }
             },
             {
@@ -3237,18 +3153,6 @@
             },
             {
                 "box": {
-                    "attr": "record",
-                    "id": "obj-3",
-                    "maxclass": "attrui",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 408.00001215934753, 120.00000357627869, 151.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
                     "buffername": "osc_gran_buf",
                     "id": "obj-48",
                     "maxclass": "waveform~",
@@ -3607,19 +3511,19 @@
                     "preset_data": [
                         {
                             "number": 1,
-                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.377952766418457, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.5, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.0, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 0.0, 5, "obj-46", "live.dial", "float", 0.0, 5, "obj-47", "live.dial", "float", 37.7952766418457, 5, "obj-3", "attrui", "attr", "record", 5, "obj-3", "attrui", "float", 0.0, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
+                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.377952766418457, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.5, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.0, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 0.0, 5, "obj-46", "live.dial", "float", 0.0, 5, "obj-47", "live.dial", "float", 37.7952766418457, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
                         },
                         {
                             "number": 2,
-                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.118110237121582, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.5, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.582677154541016, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 0.0, 5, "obj-46", "live.dial", "float", 58.26771545410156, 5, "obj-47", "live.dial", "float", 11.811023712158203, 5, "obj-3", "attrui", "attr", "record", 5, "obj-3", "attrui", "float", 0.0, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
+                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.118110237121582, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.5, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.582677154541016, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 0.0, 5, "obj-46", "live.dial", "float", 58.26771545410156, 5, "obj-47", "live.dial", "float", 11.811023712158203, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
                         },
                         {
                             "number": 3,
-                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.795275573730469, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.69, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.795275573730469, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 19.0, 5, "obj-46", "live.dial", "float", 79.52755737304688, 5, "obj-47", "live.dial", "float", 79.52755737304688, 5, "obj-3", "attrui", "attr", "record", 5, "obj-3", "attrui", "float", 0.0, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
+                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.795275573730469, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.69, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.795275573730469, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 19.0, 5, "obj-46", "live.dial", "float", 79.52755737304688, 5, "obj-47", "live.dial", "float", 79.52755737304688, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
                         },
                         {
                             "number": 4,
-                            "data": [ 5, "obj-23", "live.dial", "float", 103.826171875, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 103.82617451610498, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.795275573730469, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.37, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.795275573730469, 5, "obj-12", "live.dial", "float", 44.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", -13.0, 5, "obj-46", "live.dial", "float", 79.52755737304688, 5, "obj-47", "live.dial", "float", 79.52755737304688, 5, "obj-3", "attrui", "attr", "record", 5, "obj-3", "attrui", "float", 0.0, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
+                            "data": [ 5, "obj-23", "live.dial", "float", 103.826171875, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 103.82617451610498, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.795275573730469, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.37, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.795275573730469, 5, "obj-12", "live.dial", "float", 44.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", -13.0, 5, "obj-46", "live.dial", "float", 79.52755737304688, 5, "obj-47", "live.dial", "float", 79.52755737304688, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
                         }
                     ]
                 }
@@ -3750,9 +3654,9 @@
                                     "patching_rect": [ 355.25, 247.0, 77.0, 23.0 ],
                                     "rnbo_classname": "delay~",
                                     "rnbo_extra_attributes": {
-                                        "ramp": 50.0,
                                         "interp": "linear",
-                                        "maxdelayms": 0.0
+                                        "maxdelayms": 0.0,
+                                        "ramp": 50.0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "delay~_obj-2",
@@ -3769,13 +3673,13 @@
                                     "patching_rect": [ 55.25, 343.0, 229.0, 23.0 ],
                                     "rnbo_classname": "p",
                                     "rnbo_extra_attributes": {
+                                        "notecontroller": 0,
+                                        "uidstyle": "auto",
                                         "polyphony": -1.0,
                                         "voicecontrol": "MIDI",
-                                        "uidstyle": "auto",
-                                        "args": [],
-                                        "exposevoiceparams": 0,
                                         "receivemode": "local",
-                                        "notecontroller": 0
+                                        "args": [],
+                                        "exposevoiceparams": 0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "env.adsr",
@@ -4592,18 +4496,18 @@
                                     "patching_rect": [ 468.25, 309.0, 227.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "preset": 1,
                                         "enum": "",
                                         "exponent": 1.0,
-                                        "sendinit": 1,
+                                        "fromnormalized": "",
                                         "unit": "",
-                                        "meta": "",
-                                        "ctlin": 0.0,
-                                        "order": "",
-                                        "tonormalized": "",
-                                        "displayname": "",
+                                        "preset": 1,
                                         "displayorder": "-",
-                                        "fromnormalized": ""
+                                        "order": "",
+                                        "meta": "",
+                                        "sendinit": 1,
+                                        "ctlin": 0.0,
+                                        "tonormalized": "",
+                                        "displayname": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "record",
@@ -5009,9 +4913,9 @@
                                     "patching_rect": [ 468.25, 271.5, 218.0, 23.0 ],
                                     "rnbo_classname": "splat~",
                                     "rnbo_extra_attributes": {
-                                        "channelmode": "wrap",
                                         "boundmode": "wrap",
-                                        "overdubmode": "mix"
+                                        "overdubmode": "mix",
+                                        "channelmode": "wrap"
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "splat~_obj-5",
@@ -5123,12 +5027,12 @@
                                     "patching_rect": [ 55.25, 296.0, 319.0, 37.0 ],
                                     "rnbo_classname": "p",
                                     "rnbo_extra_attributes": {
+                                        "notecontroller": 0,
+                                        "uidstyle": "auto",
                                         "polyphony": -1.0,
                                         "voicecontrol": "MIDI",
-                                        "uidstyle": "auto",
-                                        "exposevoiceparams": 0,
                                         "receivemode": "local",
-                                        "notecontroller": 0
+                                        "exposevoiceparams": 0
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "granular",
@@ -5457,10 +5361,10 @@
                                     "rnbo_classname": "buffer~",
                                     "rnbo_extra_attributes": {
                                         "preset": 0,
-                                        "samplerate": 0.0,
                                         "meta": "",
-                                        "fill": "",
-                                        "type": ""
+                                        "samplerate": 0.0,
+                                        "type": "",
+                                        "fill": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "buffer~_obj-23",
@@ -5848,8 +5752,8 @@
                                     "patching_rect": [ 55.25, 132.0, 33.0, 23.0 ],
                                     "rnbo_classname": "mtof",
                                     "rnbo_extra_attributes": {
-                                        "filter": 1.0,
-                                        "scalename": ""
+                                        "scalename": "",
+                                        "filter": 1.0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "mtof_obj-9",
@@ -6334,6 +6238,21 @@
                     "presentation": 1,
                     "presentation_rect": [ 283.50513875484467, 442.2680164575577, 175.0, 29.0 ],
                     "rnboattrcache": {
+                        "poly/env.adsr/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/granular/basefreq": {
+                            "label": "basefreq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/env.adsr/decay": {
+                            "label": "decay",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
                         "record": {
                             "label": "record",
                             "isEnum": 0,
@@ -6344,13 +6263,8 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "poly/granular/starttime": {
-                            "label": "starttime",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/env.adsr/attack": {
-                            "label": "attack",
+                        "poly/granular/grainlength": {
+                            "label": "grainlength",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -6359,28 +6273,18 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "poly/env.adsr/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "poly/granular/buffchan": {
                             "label": "buffchan",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "poly/granular/grainlength": {
-                            "label": "grainlength",
+                        "poly/env.adsr/release": {
+                            "label": "release",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "poly/env.adsr/decay": {
-                            "label": "decay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/granular/basefreq": {
-                            "label": "basefreq",
+                        "poly/granular/starttime": {
+                            "label": "starttime",
                             "isEnum": 0,
                             "parsestring": ""
                         }
@@ -6423,30 +6327,30 @@
                                                     "value": 0.0
                                                 },
                                                 "panpos": {
-                                                    "value": 0.15321196905970183
+                                                    "value": 0.5
                                                 },
                                                 "grainlength": {
-                                                    "value": 0.4807942328569852
+                                                    "value": 0.37795276641845704
                                                 },
                                                 "starttime": {
-                                                    "value": 0.20710014573420776
+                                                    "value": 0.0
                                                 },
                                                 "basefreq": {
-                                                    "value": 104.82149889865181
+                                                    "value": 261.62556541047064
                                                 }
                                             },
                                             "env.adsr": {
                                                 "release": {
-                                                    "value": 1688.9417088786456
+                                                    "value": 300.0
                                                 },
                                                 "sustain": {
-                                                    "value": 0.48069641891345793
+                                                    "value": 0.5
                                                 },
                                                 "decay": {
-                                                    "value": 3853.582454525214
+                                                    "value": 30.0
                                                 },
                                                 "attack": {
-                                                    "value": 127.9505345323584
+                                                    "value": 30.0
                                                 }
                                             }
                                         }
@@ -6483,30 +6387,30 @@
                                                                 "value": 0.0
                                                             },
                                                             "panpos": {
-                                                                "value": 0.15321196905970183
+                                                                "value": 0.5
                                                             },
                                                             "grainlength": {
-                                                                "value": 0.4807942328569852
+                                                                "value": 0.37795276641845704
                                                             },
                                                             "starttime": {
-                                                                "value": 0.20710014573420776
+                                                                "value": 0.0
                                                             },
                                                             "basefreq": {
-                                                                "value": 104.82149889865181
+                                                                "value": 261.62556541047064
                                                             }
                                                         },
                                                         "env.adsr": {
                                                             "release": {
-                                                                "value": 1688.9417088786456
+                                                                "value": 300.0
                                                             },
                                                             "sustain": {
-                                                                "value": 0.48069641891345793
+                                                                "value": 0.5
                                                             },
                                                             "decay": {
-                                                                "value": 3853.582454525214
+                                                                "value": 30.0
                                                             },
                                                             "attack": {
-                                                                "value": 127.9505345323584
+                                                                "value": 30.0
                                                             }
                                                         }
                                                     }
@@ -6968,12 +6872,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-70", 0 ],
-                    "source": [ "obj-142", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-62", 1 ],
                     "order": 0,
                     "source": [ "obj-16", 0 ]
@@ -7000,20 +6898,14 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-69", 0 ],
+                    "destination": [ "obj-82", 1 ],
                     "source": [ "obj-2", 1 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-72", 0 ],
+                    "destination": [ "obj-82", 0 ],
                     "source": [ "obj-2", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-2", 0 ],
-                    "source": [ "obj-20", 0 ]
                 }
             },
             {
@@ -7089,12 +6981,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-2", 0 ],
-                    "source": [ "obj-3", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-64", 0 ],
                     "source": [ "obj-31", 0 ]
                 }
@@ -7103,12 +6989,6 @@
                 "patchline": {
                     "destination": [ "obj-12", 0 ],
                     "source": [ "obj-32", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-3", 0 ],
-                    "source": [ "obj-33", 0 ]
                 }
             },
             {
@@ -7144,20 +7024,6 @@
                     "destination": [ "obj-12", 0 ],
                     "midpoints": [ 592.5547543764114, 467.90727508068085, 763.0907081365585, 467.90727508068085, 763.0907081365585, 317.90727508068085, 700.7739245891571, 317.90727508068085 ],
                     "source": [ "obj-36", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-69", 1 ],
-                    "order": 0,
-                    "source": [ "obj-38", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-72", 1 ],
-                    "order": 1,
-                    "source": [ "obj-38", 0 ]
                 }
             },
             {
@@ -7335,6 +7201,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-10", 0 ],
+                    "order": 0,
+                    "source": [ "obj-65", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-70", 0 ],
+                    "order": 1,
                     "source": [ "obj-65", 0 ]
                 }
             },
@@ -7356,26 +7230,14 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-82", 1 ],
-                    "source": [ "obj-69", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-2", 0 ],
                     "source": [ "obj-7", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-38", 0 ],
+                    "destination": [ "obj-31", 0 ],
                     "source": [ "obj-70", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-82", 0 ],
-                    "source": [ "obj-72", 0 ]
                 }
             },
             {
@@ -7490,12 +7352,6 @@
                 "patchline": {
                     "destination": [ "obj-16", 0 ],
                     "source": [ "obj-86", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-141", 0 ],
-                    "source": [ "obj-87", 0 ]
                 }
             },
             {

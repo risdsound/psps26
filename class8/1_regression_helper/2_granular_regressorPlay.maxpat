@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 120.0, 100.0, 1134.0, 725.0 ],
+        "rect": [ 120.0, 100.0, 1050.0, 802.0 ],
         "boxes": [
             {
                 "box": {
@@ -1237,41 +1237,14 @@
             },
             {
                 "box": {
-                    "hidden": 1,
                     "id": "obj-44",
-                    "linecount": 2,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 536.9862623214722, 713.6078482866287, 219.0, 33.0 ],
+                    "patching_rect": [ 536.9862623214722, 713.6078482866287, 219.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 63.91752219200134, 211.34019434452057, 241.0, 20.0 ],
-                    "text": "OR drag and drop sound files on waveform "
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-39",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 438.6666797399521, 90.6666693687439, 99.0, 20.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 164.83504438400269, 172.40409803390503, 176.71231591701508, 20.0 ],
-                    "text": "record into buffer"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-33",
-                    "maxclass": "toggle",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 406.66667878627777, 89.33333599567413, 24.0, 24.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 113.09531855583191, 157.53423511981964, 49.739725828170776, 49.739725828170776 ]
+                    "presentation_rect": [ 58.20102775096893, 211.0, 241.0, 20.0 ],
+                    "text": "Drag and drop sound files on waveform "
                 }
             },
             {
@@ -1286,19 +1259,6 @@
                     "presentation_linecount": 2,
                     "presentation_rect": [ 56.70102775096893, 39.17525553703308, 244.0, 33.0 ],
                     "text": "NOTE: From File > Show Package Magager\ninstall: RNBO Synth Building Blocks"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-20",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "signal", "signal" ],
-                    "patching_rect": [ 88.54166328907013, 251.0, 35.0, 22.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 64.26288330554962, 165.38354969024658, 35.0, 22.0 ],
-                    "text": "adc~"
                 }
             },
             {
@@ -1669,8 +1629,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 578.0821497440338, 523.1969032287598, 122.0, 22.0 ],
-                    "text": "buffer~ osc_gran_buf"
+                    "patching_rect": [ 578.0821497440338, 523.1969032287598, 125.0, 22.0 ],
+                    "text": "buffer~ osc_gran_buff"
                 }
             },
             {
@@ -1691,25 +1651,13 @@
                     "numinlets": 1,
                     "numoutlets": 10,
                     "outlettype": [ "float", "list", "float", "float", "float", "float", "float", "", "int", "" ],
-                    "patching_rect": [ 679.4520053863525, 553.3338873386383, 111.0, 22.0 ],
-                    "text": "info~ osc_gran_buf"
+                    "patching_rect": [ 679.4520053863525, 553.3338873386383, 114.0, 22.0 ],
+                    "text": "info~ osc_gran_buff"
                 }
             },
             {
                 "box": {
-                    "attr": "record",
-                    "id": "obj-3",
-                    "maxclass": "attrui",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 408.00001215934753, 120.00000357627869, 151.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "buffername": "osc_gran_buf",
+                    "buffername": "osc_gran_buff",
                     "id": "obj-48",
                     "maxclass": "waveform~",
                     "numinlets": 5,
@@ -2067,23 +2015,23 @@
                     "preset_data": [
                         {
                             "number": 1,
-                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.377952766418457, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.5, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.0, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 0.0, 5, "obj-46", "live.dial", "float", 0.0, 5, "obj-47", "live.dial", "float", 37.7952766418457, 5, "obj-3", "attrui", "attr", "record", 5, "obj-3", "attrui", "float", 0.0, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
+                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.377952766418457, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.5, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.0, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 0.0, 5, "obj-46", "live.dial", "float", 0.0, 5, "obj-47", "live.dial", "float", 37.7952766418457, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
                         },
                         {
                             "number": 2,
-                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.118110237121582, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.5, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.582677154541016, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 0.0, 5, "obj-46", "live.dial", "float", 58.26771545410156, 5, "obj-47", "live.dial", "float", 11.811023712158203, 5, "obj-3", "attrui", "attr", "record", 5, "obj-3", "attrui", "float", 0.0, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
+                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.118110237121582, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.5, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.582677154541016, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 0.0, 5, "obj-46", "live.dial", "float", 58.26771545410156, 5, "obj-47", "live.dial", "float", 11.811023712158203, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
                         },
                         {
                             "number": 3,
-                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.795275573730469, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.69, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.795275573730469, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 19.0, 5, "obj-46", "live.dial", "float", 79.52755737304688, 5, "obj-47", "live.dial", "float", 79.52755737304688, 5, "obj-3", "attrui", "attr", "record", 5, "obj-3", "attrui", "float", 0.0, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
+                            "data": [ 5, "obj-23", "live.dial", "float", 261.6255798339844, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 261.62556541047064, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.795275573730469, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.69, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.795275573730469, 5, "obj-12", "live.dial", "float", 60.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", 19.0, 5, "obj-46", "live.dial", "float", 79.52755737304688, 5, "obj-47", "live.dial", "float", 79.52755737304688, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
                         },
                         {
                             "number": 4,
-                            "data": [ 5, "obj-23", "live.dial", "float", 103.826171875, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 103.82617451610498, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.795275573730469, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.37, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.795275573730469, 5, "obj-12", "live.dial", "float", 44.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", -13.0, 5, "obj-46", "live.dial", "float", 79.52755737304688, 5, "obj-47", "live.dial", "float", 79.52755737304688, 5, "obj-3", "attrui", "attr", "record", 5, "obj-3", "attrui", "float", 0.0, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
+                            "data": [ 5, "obj-23", "live.dial", "float", 103.826171875, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 103.82617451610498, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.795275573730469, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.37, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.795275573730469, 5, "obj-12", "live.dial", "float", 44.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", -13.0, 5, "obj-46", "live.dial", "float", 79.52755737304688, 5, "obj-47", "live.dial", "float", 79.52755737304688, 5, "obj-18", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-13", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5 ]
                         },
                         {
                             "number": 5,
-                            "data": [ 5, "obj-23", "live.dial", "float", 36.15325164794922, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 36.15325072937399, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.11325182233537946, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.45024816937498996, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.27442398831084536, 5, "obj-12", "live.dial", "float", 26.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", -4.975183010101318, 5, "obj-46", "live.dial", "float", 27.442398071289062, 5, "obj-47", "live.dial", "float", 11.32518196105957, 5, "obj-3", "attrui", "attr", "record", 5, "obj-3", "attrui", "float", 0.0, 5, "obj-18", "live.dial", "float", 219.15890502929688, 5, "obj-17", "live.dial", "float", 2351.255859375, 5, "obj-13", "live.dial", "float", 2335.202880859375, 5, "obj-50", "live.dial", "float", 0.8458525538444519, 5, "obj-33", "toggle", "int", 0, 5, "obj-31", "toggle", "int", 0, 5, "obj-60", "umenu", "int", 5, 5, "obj-58", "slider", "float", 0.4316059350967407, 5, "obj-55", "slider", "float", 0.0010376609861850739, 5, "obj-83", "number", "int", 55 ]
+                            "data": [ 5, "obj-23", "live.dial", "float", 36.15325164794922, 5, "obj-4", "attrui", "attr", "poly/granular/basefreq", 5, "obj-4", "attrui", "float", 36.15325072937399, 5, "obj-5", "attrui", "attr", "poly/granular/grainlength", 5, "obj-5", "attrui", "float", 0.11325182233537946, 5, "obj-7", "attrui", "attr", "poly/granular/panpos", 5, "obj-7", "attrui", "float", 0.45024816937498996, 5, "obj-11", "attrui", "attr", "poly/granular/starttime", 5, "obj-11", "attrui", "float", 0.27442398831084536, 5, "obj-12", "live.dial", "float", 26.0, 5, "obj-35", "live.text", "float", 0.0, 5, "obj-42", "live.dial", "float", -4.975183010101318, 5, "obj-46", "live.dial", "float", 27.442398071289062, 5, "obj-47", "live.dial", "float", 11.32518196105957, 5, "obj-18", "live.dial", "float", 219.15890502929688, 5, "obj-17", "live.dial", "float", 2351.255859375, 5, "obj-13", "live.dial", "float", 2335.202880859375, 5, "obj-50", "live.dial", "float", 0.8458525538444519, 5, "obj-31", "toggle", "int", 0, 5, "obj-60", "umenu", "int", 5, 5, "obj-58", "slider", "float", 0.4316059350967407, 5, "obj-55", "slider", "float", 0.0010376609861850739, 5, "obj-83", "number", "int", 55 ]
                         }
                     ]
                 }
@@ -2200,7 +2148,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "rnbo",
-                        "rect": [ 170.0, 149.0, 835.0, 460.0 ],
+                        "rect": [ 361.0, 265.0, 835.0, 460.0 ],
                         "default_fontname": "Lato",
                         "title": "untitled",
                         "boxes": [
@@ -2214,8 +2162,8 @@
                                     "patching_rect": [ 355.25, 247.0, 77.0, 23.0 ],
                                     "rnbo_classname": "delay~",
                                     "rnbo_extra_attributes": {
-                                        "interp": "linear",
                                         "maxdelayms": 0.0,
+                                        "interp": "linear",
                                         "ramp": 50.0
                                     },
                                     "rnbo_serial": 1,
@@ -2234,12 +2182,12 @@
                                     "rnbo_classname": "p",
                                     "rnbo_extra_attributes": {
                                         "notecontroller": 0,
-                                        "exposevoiceparams": 0,
-                                        "uidstyle": "auto",
-                                        "args": [],
                                         "polyphony": -1.0,
+                                        "uidstyle": "auto",
+                                        "voicecontrol": "MIDI",
+                                        "args": [],
                                         "receivemode": "local",
-                                        "voicecontrol": "MIDI"
+                                        "exposevoiceparams": 0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "env.adsr",
@@ -3056,18 +3004,18 @@
                                     "patching_rect": [ 468.25, 309.0, 227.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "exponent": 1.0,
-                                        "tonormalized": "",
-                                        "unit": "",
-                                        "meta": "",
-                                        "ctlin": 0.0,
-                                        "order": "",
-                                        "fromnormalized": "",
-                                        "enum": "",
                                         "displayorder": "-",
+                                        "ctlin": 0.0,
+                                        "exponent": 1.0,
+                                        "fromnormalized": "",
+                                        "meta": "",
+                                        "unit": "",
                                         "sendinit": 1,
+                                        "enum": "",
                                         "preset": 1,
-                                        "displayname": ""
+                                        "order": "",
+                                        "displayname": "",
+                                        "tonormalized": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "record",
@@ -3470,7 +3418,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 4,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 468.25, 271.5, 218.0, 23.0 ],
+                                    "patching_rect": [ 468.25, 271.5, 223.0, 23.0 ],
                                     "rnbo_classname": "splat~",
                                     "rnbo_extra_attributes": {
                                         "channelmode": "wrap",
@@ -3479,7 +3427,7 @@
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "splat~_obj-5",
-                                    "text": "splat~ osc_gran_buf @indexmode phase"
+                                    "text": "splat~ osc_gran_buff @indexmode phase"
                                 }
                             },
                             {
@@ -3579,20 +3527,19 @@
                                 "box": {
                                     "color": [ 0.82517, 0.78181, 0.059545, 1.0 ],
                                     "id": "obj-34",
-                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "signal", "signal" ],
-                                    "patching_rect": [ 55.25, 296.0, 319.0, 37.0 ],
+                                    "patching_rect": [ 55.25, 296.0, 324.0, 23.0 ],
                                     "rnbo_classname": "p",
                                     "rnbo_extra_attributes": {
                                         "notecontroller": 0,
-                                        "exposevoiceparams": 0,
-                                        "uidstyle": "auto",
                                         "polyphony": -1.0,
+                                        "uidstyle": "auto",
+                                        "voicecontrol": "MIDI",
                                         "receivemode": "local",
-                                        "voicecontrol": "MIDI"
+                                        "exposevoiceparams": 0
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "granular",
@@ -3905,7 +3852,7 @@
                                         "versionId": 426236520,
                                         "changesPatcherIO": 0
                                     },
-                                    "text": "p @file sbb.osc.granular @title granular @args osc_gran_buf",
+                                    "text": "p @file sbb.osc.granular @title granular @args osc_gran_buff",
                                     "varname": "granular"
                                 }
                             },
@@ -3917,13 +3864,13 @@
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "" ],
-                                    "patching_rect": [ 606.0, 68.0, 209.0, 23.0 ],
+                                    "patching_rect": [ 606.0, 68.0, 213.0, 23.0 ],
                                     "rnbo_classname": "buffer~",
                                     "rnbo_extra_attributes": {
-                                        "meta": "",
-                                        "fill": "",
                                         "type": "",
                                         "samplerate": 0.0,
+                                        "fill": "",
+                                        "meta": "",
                                         "preset": 0
                                     },
                                     "rnbo_serial": 1,
@@ -4223,7 +4170,7 @@
                                         "versionId": 405570163,
                                         "changesPatcherIO": 0
                                     },
-                                    "text": "buffer~ osc_gran_buf @file cello-f2.aif"
+                                    "text": "buffer~ osc_gran_buff @file cello-f2.aif"
                                 }
                             },
                             {
@@ -4312,8 +4259,8 @@
                                     "patching_rect": [ 55.25, 132.0, 33.0, 23.0 ],
                                     "rnbo_classname": "mtof",
                                     "rnbo_extra_attributes": {
-                                        "scalename": "",
-                                        "filter": 1.0
+                                        "filter": 1.0,
+                                        "scalename": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "mtof_obj-9",
@@ -4798,13 +4745,33 @@
                     "presentation": 1,
                     "presentation_rect": [ 283.50513875484467, 442.2680164575577, 175.0, 29.0 ],
                     "rnboattrcache": {
-                        "poly/granular/panpos": {
-                            "label": "panpos",
+                        "poly/env.adsr/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/env.adsr/sustain": {
+                            "label": "sustain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/granular/buffchan": {
+                            "label": "buffchan",
                             "isEnum": 0,
                             "parsestring": ""
                         },
                         "poly/granular/basefreq": {
                             "label": "basefreq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/granular/panpos": {
+                            "label": "panpos",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "record": {
+                            "label": "record",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -4823,28 +4790,8 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "poly/env.adsr/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "poly/env.adsr/decay": {
                             "label": "decay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/env.adsr/sustain": {
-                            "label": "sustain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/granular/buffchan": {
-                            "label": "buffchan",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "record": {
-                            "label": "record",
                             "isEnum": 0,
                             "parsestring": ""
                         }
@@ -4887,30 +4834,30 @@
                                                     "value": 0.0
                                                 },
                                                 "panpos": {
-                                                    "value": 0.31733208894729614
+                                                    "value": 0.7728028297424316
                                                 },
                                                 "grainlength": {
-                                                    "value": 0.8668546676635742
+                                                    "value": 0.1470939815044403
                                                 },
                                                 "starttime": {
-                                                    "value": 0.2658354938030243
+                                                    "value": 0.6495348811149597
                                                 },
                                                 "basefreq": {
-                                                    "value": 161.01886343308615
+                                                    "value": 38.49799922395889
                                                 }
                                             },
                                             "env.adsr": {
                                                 "release": {
-                                                    "value": 1275.2866953611374
+                                                    "value": 4559.332934021952
                                                 },
                                                 "sustain": {
-                                                    "value": 0.642996072769165
+                                                    "value": 0.7183376550674438
                                                 },
                                                 "decay": {
-                                                    "value": 2132.2610139846806
+                                                    "value": 3374.661070108414
                                                 },
                                                 "attack": {
-                                                    "value": 3958.9330792427068
+                                                    "value": 417.7505987882615
                                                 }
                                             }
                                         }
@@ -4947,30 +4894,30 @@
                                                                 "value": 0.0
                                                             },
                                                             "panpos": {
-                                                                "value": 0.31733208894729614
+                                                                "value": 0.7728028297424316
                                                             },
                                                             "grainlength": {
-                                                                "value": 0.8668546676635742
+                                                                "value": 0.1470939815044403
                                                             },
                                                             "starttime": {
-                                                                "value": 0.2658354938030243
+                                                                "value": 0.6495348811149597
                                                             },
                                                             "basefreq": {
-                                                                "value": 161.01886343308615
+                                                                "value": 38.49799922395889
                                                             }
                                                         },
                                                         "env.adsr": {
                                                             "release": {
-                                                                "value": 1275.2866953611374
+                                                                "value": 4559.332934021952
                                                             },
                                                             "sustain": {
-                                                                "value": 0.642996072769165
+                                                                "value": 0.7183376550674438
                                                             },
                                                             "decay": {
-                                                                "value": 2132.2610139846806
+                                                                "value": 3374.661070108414
                                                             },
                                                             "attack": {
-                                                                "value": 3958.9330792427068
+                                                                "value": 417.7505987882615
                                                             }
                                                         }
                                                     }
@@ -5326,12 +5273,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-2", 0 ],
-                    "source": [ "obj-20", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-49", 1 ],
                     "order": 1,
                     "source": [ "obj-21", 6 ]
@@ -5390,12 +5331,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-2", 0 ],
-                    "source": [ "obj-3", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-64", 0 ],
                     "source": [ "obj-31", 0 ]
                 }
@@ -5404,12 +5339,6 @@
                 "patchline": {
                     "destination": [ "obj-12", 0 ],
                     "source": [ "obj-32", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-3", 0 ],
-                    "source": [ "obj-33", 0 ]
                 }
             },
             {
