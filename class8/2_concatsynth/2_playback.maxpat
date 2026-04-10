@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 149.0, 105.0, 1421.0, 781.0 ],
+        "rect": [ 57.0, 105.0, 1421.0, 781.0 ],
         "boxes": [
             {
                 "box": {
@@ -50,6 +50,10 @@
                         {
                             "number": 3,
                             "data": [ 5, "obj-26", "toggle", "int", 1, 5, "obj-25", "live.dial", "float", 100.0, 5, "obj-255", "live.dial", "float", 22.425844192504883, 5, "obj-134", "live.dial", "float", 100.0, 5, "obj-84", "toggle", "int", 0, 5, "obj-130", "live.dial", "float", 50.0, 5, "obj-152", "umenu", "int", 6, 5, "obj-21", "live.dial", "float", 0.0, 5, "obj-39", "number", "float", 0.003923536278307438, 5, "obj-34", "live.dial", "float", 100.0, 5, "obj-7", "live.dial", "float", 100.0, 5, "obj-17", "live.dial", "float", 0.24964623153209686, 5, "obj-4", "live.dial", "float", 0.7249694466590881, 5, "obj-3", "live.dial", "float", 100.0, 5, "obj-42", "live.dial", "float", 34.68503952026367, 5, "obj-15", "number", "int", 11 ]
+                        },
+                        {
+                            "number": 4,
+                            "data": [ 5, "obj-26", "toggle", "int", 1, 5, "obj-25", "live.dial", "float", 268.16082763671875, 5, "obj-255", "live.dial", "float", 67.43453216552734, 5, "obj-134", "live.dial", "float", 100.0, 5, "obj-84", "toggle", "int", 0, 5, "obj-130", "live.dial", "float", 55.511810302734375, 5, "obj-152", "umenu", "int", 0, 5, "obj-21", "live.dial", "float", 0.0, 5, "obj-39", "number", "float", 0.0013427734375, 5, "obj-34", "live.dial", "float", 269.5409851074219, 5, "obj-7", "live.dial", "float", 100.0, 5, "obj-17", "live.dial", "float", 6.837653160095215, 5, "obj-4", "live.dial", "float", 9.542673110961914, 5, "obj-3", "live.dial", "float", 100.0, 5, "obj-42", "live.dial", "float", 39.80315017700195, 5, "obj-15", "number", "int", 10 ]
                         }
                     ]
                 }
@@ -464,7 +468,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 96.0, 144.0, 98.0, 22.0 ],
+                    "patching_rect": [ 96.0, 136.66667073965073, 98.0, 22.0 ],
                     "text": "gate~ @ramp 10"
                 }
             },
@@ -498,7 +502,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 96.0, 109.0, 42.0, 22.0 ],
+                    "patching_rect": [ 96.0, 101.333336353302, 42.0, 22.0 ],
                     "text": "> 0.05"
                 }
             },
@@ -515,7 +519,7 @@
             {
                 "box": {
                     "bgcolor": [ 0.09782765023003, 0.097827613875914, 0.09782762332443, 1.0 ],
-                    "buffername": "1237concat_buffer",
+                    "buffername": "1160concat_buffer",
                     "gridcolor": [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
                     "id": "obj-36",
                     "ignoreclick": 1,

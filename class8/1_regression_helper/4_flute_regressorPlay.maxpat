@@ -9,8 +9,19 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 182.0, 87.0, 1279.0, 859.0 ],
+        "rect": [ 134.0, 100.0, 1279.0, 848.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-7",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 666.5, 325.0, 91.0, 22.0 ],
+                    "text": "read flute2.json"
+                }
+            },
             {
                 "box": {
                     "attr": "mix",
@@ -215,7 +226,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-36",
-                    "items": [ "IAC Driver Bus 1", ",", "828 MIDI", ",", "828 COM", ",", "BNO055 Motion MIDI", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2", ",", "BNO055 Motion MIDI" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -721,8 +732,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 682.0, 245.0, 1000.0, 780.0 ],
-                        "visible": 1,
+                        "rect": [ 478.0, 168.0, 1000.0, 780.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -877,7 +887,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 756.0, 358.0, 968.0, 596.0 ],
+                        "rect": [ 320.0, 215.0, 968.0, 596.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -1836,6 +1846,12 @@
                 "patchline": {
                     "destination": [ "obj-12", 0 ],
                     "source": [ "obj-60", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-12", 0 ],
+                    "source": [ "obj-7", 0 ]
                 }
             },
             {

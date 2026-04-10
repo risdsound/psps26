@@ -54,7 +54,7 @@ Adafruit_BMP280 bmp;
 Adafruit_USBD_MIDI usb_midi;
 MIDI_CREATE_INSTANCE(Adafruit_USBD_MIDI, usb_midi, MIDI);
 
-const uint8_t MIDI_CH = 2;
+const uint8_t MIDI_CH = 1;
 
 // ---------- 14-bit CC pairs ----------
 const uint8_t CC_ORI_X_MSB = 0;

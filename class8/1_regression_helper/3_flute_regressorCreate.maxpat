@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 182.0, 87.0, 1279.0, 859.0 ],
+        "rect": [ 65.0, 100.0, 1279.0, 848.0 ],
         "boxes": [
             {
                 "box": {
@@ -18,7 +18,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 946.0, 234.0, 137.0, 20.0 ],
-                    "presentation_linecount": 2,
                     "text": "on train, off stop training"
                 }
             },
@@ -368,7 +367,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-36",
-                    "items": [ "IAC Driver Bus 1", ",", "828 MIDI", ",", "828 COM", ",", "BNO055 Motion MIDI", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2", ",", "BNO055 Motion MIDI" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -441,6 +440,7 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 358.0, 253.0, 765.0, 569.0 ],
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -1873,7 +1873,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 682.0, 245.0, 1000.0, 780.0 ],
+                        "rect": [ 478.0, 168.0, 1000.0, 780.0 ],
                         "visible": 1,
                         "boxes": [
                             {
@@ -2186,7 +2186,8 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 756.0, 358.0, 968.0, 596.0 ],
+                        "rect": [ 159.0, 236.0, 968.0, 596.0 ],
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
