@@ -9,8 +9,51 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 149.0, 105.0, 1421.0, 780.0 ],
+        "rect": [ 149.0, 105.0, 1421.0, 781.0 ],
         "boxes": [
+            {
+                "box": {
+                    "bubble": 1,
+                    "fontname": "Arial",
+                    "fontsize": 13.0,
+                    "id": "obj-48",
+                    "linecount": 3,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 513.0, 229.0, 207.0, 54.0 ],
+                    "saved_attribute_attributes": {
+                        "textcolor": {
+                            "expression": "themecolor.theme_textcolor"
+                        }
+                    },
+                    "text": "use the preset object to save different settings (shift click on box to save the state)"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-47",
+                    "maxclass": "preset",
+                    "numinlets": 1,
+                    "numoutlets": 5,
+                    "outlettype": [ "preset", "int", "preset", "int", "" ],
+                    "patching_rect": [ 407.0, 232.0, 100.0, 40.0 ],
+                    "preset_data": [
+                        {
+                            "number": 1,
+                            "data": [ 5, "obj-26", "toggle", "int", 1, 5, "obj-25", "live.dial", "float", 100.0, 5, "obj-255", "live.dial", "float", 100.0, 5, "obj-134", "live.dial", "float", 100.0, 5, "obj-84", "toggle", "int", 0, 5, "obj-130", "live.dial", "float", 50.0, 5, "obj-152", "umenu", "int", 0, 5, "obj-21", "live.dial", "float", 0.0, 5, "obj-39", "number", "float", 0.001961424481123686, 5, "obj-34", "live.dial", "float", 100.0, 5, "obj-7", "live.dial", "float", 100.0, 5, "obj-17", "live.dial", "float", 650.0, 5, "obj-4", "live.dial", "float", 650.0, 5, "obj-3", "live.dial", "float", 100.0, 5, "obj-42", "live.dial", "float", 15.0, 5, "obj-15", "number", "int", 3 ]
+                        },
+                        {
+                            "number": 2,
+                            "data": [ 5, "obj-26", "toggle", "int", 1, 5, "obj-25", "live.dial", "float", 100.0, 5, "obj-255", "live.dial", "float", 22.425844192504883, 5, "obj-134", "live.dial", "float", 58.31791687011719, 5, "obj-84", "toggle", "int", 0, 5, "obj-130", "live.dial", "float", 50.0, 5, "obj-152", "umenu", "int", 0, 5, "obj-21", "live.dial", "float", 18.11023712158203, 5, "obj-39", "number", "float", 0.003937371540814638, 5, "obj-34", "live.dial", "float", 100.0, 5, "obj-7", "live.dial", "float", 100.0, 5, "obj-17", "live.dial", "float", 0.17956718802452087, 5, "obj-4", "live.dial", "float", 6.071061134338379, 5, "obj-3", "live.dial", "float", 100.0, 5, "obj-42", "live.dial", "float", 15.0, 5, "obj-15", "number", "int", 3 ]
+                        },
+                        {
+                            "number": 3,
+                            "data": [ 5, "obj-26", "toggle", "int", 1, 5, "obj-25", "live.dial", "float", 100.0, 5, "obj-255", "live.dial", "float", 22.425844192504883, 5, "obj-134", "live.dial", "float", 100.0, 5, "obj-84", "toggle", "int", 0, 5, "obj-130", "live.dial", "float", 50.0, 5, "obj-152", "umenu", "int", 6, 5, "obj-21", "live.dial", "float", 0.0, 5, "obj-39", "number", "float", 0.003923536278307438, 5, "obj-34", "live.dial", "float", 100.0, 5, "obj-7", "live.dial", "float", 100.0, 5, "obj-17", "live.dial", "float", 0.24964623153209686, 5, "obj-4", "live.dial", "float", 0.7249694466590881, 5, "obj-3", "live.dial", "float", 100.0, 5, "obj-42", "live.dial", "float", 34.68503952026367, 5, "obj-15", "number", "int", 11 ]
+                        }
+                    ]
+                }
+            },
             {
                 "box": {
                     "bubble": 1,
@@ -22,7 +65,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 495.0, 72.0, 116.0, 40.0 ],
-                    "presentation_linecount": 2,
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -85,7 +127,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 966.0, 461.0, 151.0, 36.0 ],
-                    "presentation_linecount": 2,
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -105,7 +146,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 951.0, 411.0, 72.0, 40.0 ],
-                    "presentation_linecount": 2,
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -382,7 +422,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1160.0, 248.0, 211.0, 40.0 ],
-                    "presentation_linecount": 2,
                     "saved_attribute_attributes": {
                         "textcolor": {
                             "expression": "themecolor.theme_textcolor"
@@ -401,7 +440,7 @@
                     "orientation": 1,
                     "outlettype": [ "signal", "signal", "", "float", "list" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 96.0, 269.0, 136.0, 47.0 ],
+                    "patching_rect": [ 96.0, 313.0, 136.0, 47.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_initial": [ -70.0 ],
@@ -469,14 +508,14 @@
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 0,
-                    "patching_rect": [ 96.0, 339.0, 35.0, 22.0 ],
+                    "patching_rect": [ 96.0, 383.0, 35.0, 22.0 ],
                     "text": "dac~"
                 }
             },
             {
                 "box": {
                     "bgcolor": [ 0.09782765023003, 0.097827613875914, 0.09782762332443, 1.0 ],
-                    "buffername": "1605concat_buffer",
+                    "buffername": "1237concat_buffer",
                     "gridcolor": [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
                     "id": "obj-36",
                     "ignoreclick": 1,
@@ -1228,6 +1267,12 @@
                 "patchline": {
                     "destination": [ "obj-45", 0 ],
                     "source": [ "obj-43", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-41", 0 ],
+                    "source": [ "obj-47", 2 ]
                 }
             },
             {
