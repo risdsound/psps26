@@ -9,8 +9,31 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 65.0, 100.0, 1279.0, 848.0 ],
+        "rect": [ 145.0, 177.0, 1279.0, 848.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-6",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 396.1164994239807, 256.0, 80.0, 22.0 ],
+                    "text": "loadmess 0.3"
+                }
+            },
+            {
+                "box": {
+                    "format": 6,
+                    "id": "obj-4",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 396.1164994239807, 292.9611613750458, 50.0, 22.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-1",
@@ -367,7 +390,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-36",
-                    "items": [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2", ",", "BNO055 Motion MIDI" ],
+                    "items": [ "IAC Driver Bus 1", ",", "BNO055_BMP280_MIDI Bluetooth", ",", "to Max 1", ",", "to Max 2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -3037,13 +3060,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-41", 0 ],
-                    "midpoints": [ 382.73285276279785, 224.70418381271884 ],
-                    "source": [ "obj-102", 1 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-5", 0 ],
                     "order": 0,
                     "source": [ "obj-102", 2 ]
@@ -3266,6 +3282,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-41", 0 ],
+                    "source": [ "obj-4", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-38", 0 ],
                     "source": [ "obj-41", 0 ]
                 }
@@ -3310,6 +3332,12 @@
                 "patchline": {
                     "destination": [ "obj-13", 1 ],
                     "source": [ "obj-58", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-4", 0 ],
+                    "source": [ "obj-6", 0 ]
                 }
             },
             {

@@ -9,7 +9,8 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 15.0, 100.0, 1408.0, 823.0 ],
+        "rect": [ 34.0, 100.0, 1408.0, 823.0 ],
+        "openinpresentation": 1,
         "boxes": [
             {
                 "box": {
@@ -2084,7 +2085,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-60",
-                    "items": [ "IAC Driver Bus 1", ",", "BNO055 Motion MIDI", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "IAC Driver Bus 1", ",", "828 MIDI", ",", "828 COM", ",", "to Max 1", ",", "to Max 2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -2737,7 +2738,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 536.9862623214722, 713.6078482866287, 219.0, 20.0 ],
+                    "patching_rect": [ 536.9862623214722, 713.6078482866287, 221.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 58.76288330554962, 215.06847751140594, 344.0, 20.0 ],
                     "text": "Drag and drop sound files on waveform "
@@ -3655,8 +3656,8 @@
                                     "rnbo_classname": "delay~",
                                     "rnbo_extra_attributes": {
                                         "interp": "linear",
-                                        "maxdelayms": 0.0,
-                                        "ramp": 50.0
+                                        "ramp": 50.0,
+                                        "maxdelayms": 0.0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "delay~_obj-2",
@@ -3674,11 +3675,11 @@
                                     "rnbo_classname": "p",
                                     "rnbo_extra_attributes": {
                                         "notecontroller": 0,
-                                        "uidstyle": "auto",
                                         "polyphony": -1.0,
+                                        "uidstyle": "auto",
                                         "voicecontrol": "MIDI",
-                                        "receivemode": "local",
                                         "args": [],
+                                        "receivemode": "local",
                                         "exposevoiceparams": 0
                                     },
                                     "rnbo_serial": 1,
@@ -4496,18 +4497,18 @@
                                     "patching_rect": [ 468.25, 309.0, 227.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
+                                        "preset": 1,
                                         "enum": "",
+                                        "displayorder": "-",
+                                        "tonormalized": "",
                                         "exponent": 1.0,
                                         "fromnormalized": "",
                                         "unit": "",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "order": "",
-                                        "meta": "",
-                                        "sendinit": 1,
                                         "ctlin": 0.0,
-                                        "tonormalized": "",
-                                        "displayname": ""
+                                        "order": "",
+                                        "displayname": "",
+                                        "meta": "",
+                                        "sendinit": 1
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "record",
@@ -5028,8 +5029,8 @@
                                     "rnbo_classname": "p",
                                     "rnbo_extra_attributes": {
                                         "notecontroller": 0,
-                                        "uidstyle": "auto",
                                         "polyphony": -1.0,
+                                        "uidstyle": "auto",
                                         "voicecontrol": "MIDI",
                                         "receivemode": "local",
                                         "exposevoiceparams": 0
@@ -5360,11 +5361,11 @@
                                     "patching_rect": [ 606.0, 68.0, 209.0, 23.0 ],
                                     "rnbo_classname": "buffer~",
                                     "rnbo_extra_attributes": {
-                                        "preset": 0,
-                                        "meta": "",
-                                        "samplerate": 0.0,
                                         "type": "",
-                                        "fill": ""
+                                        "fill": "",
+                                        "preset": 0,
+                                        "samplerate": 0.0,
+                                        "meta": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "buffer~_obj-23",
@@ -5752,8 +5753,8 @@
                                     "patching_rect": [ 55.25, 132.0, 33.0, 23.0 ],
                                     "rnbo_classname": "mtof",
                                     "rnbo_extra_attributes": {
-                                        "scalename": "",
-                                        "filter": 1.0
+                                        "filter": 1.0,
+                                        "scalename": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "mtof_obj-9",
@@ -6238,43 +6239,8 @@
                     "presentation": 1,
                     "presentation_rect": [ 283.50513875484467, 442.2680164575577, 175.0, 29.0 ],
                     "rnboattrcache": {
-                        "poly/env.adsr/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/granular/basefreq": {
-                            "label": "basefreq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/env.adsr/decay": {
-                            "label": "decay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "record": {
-                            "label": "record",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "poly/env.adsr/sustain": {
                             "label": "sustain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/granular/grainlength": {
-                            "label": "grainlength",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/granular/panpos": {
-                            "label": "panpos",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/granular/buffchan": {
-                            "label": "buffchan",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -6283,8 +6249,43 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
+                        "record": {
+                            "label": "record",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
                         "poly/granular/starttime": {
                             "label": "starttime",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/granular/buffchan": {
+                            "label": "buffchan",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/env.adsr/decay": {
+                            "label": "decay",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/granular/grainlength": {
+                            "label": "grainlength",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/env.adsr/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/granular/panpos": {
+                            "label": "panpos",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/granular/basefreq": {
+                            "label": "basefreq",
                             "isEnum": 0,
                             "parsestring": ""
                         }

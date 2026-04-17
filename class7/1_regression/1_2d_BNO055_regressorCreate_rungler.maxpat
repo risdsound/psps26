@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 3,
+            "revision": 4,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 84.0, 87.0, 1224.0, 848.0 ],
+        "rect": [ 715.0, 102.0, 1224.0, 848.0 ],
         "boxes": [
             {
                 "box": {
@@ -94,13 +94,12 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 59.0, 106.0, 1000.0, 780.0 ],
-                        "visible": 1,
+                        "rect": [ 697.0, 266.0, 1000.0, 780.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -773,7 +772,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-36",
-                    "items": [ "IAC Driver Bus 1", ",", "828 MIDI", ",", "828 COM", ",", "to Max 1", ",", "to Max 2", ",", "nanoKONTROL2 SLIDER/KNOB" ],
+                    "items": [ "IAC Driver Bus 1", ",", "BNO055_BMP280_MIDI Bluetooth", ",", "to Max 1", ",", "to Max 2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,

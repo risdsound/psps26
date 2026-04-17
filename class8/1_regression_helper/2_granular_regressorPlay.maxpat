@@ -10,6 +10,7 @@
         },
         "classnamespace": "box",
         "rect": [ 120.0, 100.0, 1050.0, 802.0 ],
+        "openinpresentation": 1,
         "boxes": [
             {
                 "box": {
@@ -590,7 +591,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-60",
-                    "items": [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2", ",", "BNO055 Motion MIDI" ],
+                    "items": [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2", ",", "BNO055 + BMP280 Minimal Motion M" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -619,7 +620,30 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 358.0, 253.0, 765.0, 569.0 ],
+                        "visible": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-26",
+                                    "maxclass": "newobj",
+                                    "numinlets": 3,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 163.0, 451.0, 53.0, 22.0 ],
+                                    "text": "clip 0. 1."
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-23",
+                                    "maxclass": "newobj",
+                                    "numinlets": 6,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 163.0, 423.0, 97.0, 22.0 ],
+                                    "text": "scale 0.5 1. 0. 1."
+                                }
+                            },
                             {
                                 "box": {
                                     "comment": "",
@@ -754,7 +778,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "patching_rect": [ 56.0, 268.0, 42.0, 22.0 ],
-                                    "text": "> 0.25"
+                                    "text": "> 0.45"
                                 }
                             },
                             {
@@ -850,7 +874,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 154.0, 380.0, 71.0, 33.0 ],
-                                    "text": "pressure\nsqueeze"
+                                    "text": "pressure\ngesture"
                                 }
                             },
                             {
@@ -898,7 +922,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "patching_rect": [ 163.0, 107.0, 60.0, 23.0 ],
-                                    "text": "xctlin 8 1"
+                                    "text": "xctlin 6 1"
                                 }
                             },
                             {
@@ -979,6 +1003,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-26", 0 ],
+                                    "source": [ "obj-23", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-3", 0 ],
                                     "order": 0,
                                     "source": [ "obj-24", 0 ]
@@ -995,6 +1025,12 @@
                                 "patchline": {
                                     "destination": [ "obj-24", 0 ],
                                     "source": [ "obj-25", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-101", 0 ],
+                                    "source": [ "obj-26", 0 ]
                                 }
                             },
                             {
@@ -1037,22 +1073,15 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-101", 0 ],
-                                    "order": 0,
-                                    "source": [ "obj-82", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-33", 0 ],
-                                    "order": 2,
+                                    "order": 1,
                                     "source": [ "obj-82", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-86", 0 ],
-                                    "order": 1,
+                                    "order": 0,
                                     "source": [ "obj-82", 0 ]
                                 }
                             },
@@ -1072,6 +1101,12 @@
                                 "patchline": {
                                     "destination": [ "obj-84", 0 ],
                                     "source": [ "obj-85", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-23", 0 ],
+                                    "source": [ "obj-86", 0 ]
                                 }
                             }
                         ],
@@ -1241,7 +1276,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 536.9862623214722, 713.6078482866287, 219.0, 20.0 ],
+                    "patching_rect": [ 536.9862623214722, 713.6078482866287, 221.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 58.20102775096893, 211.0, 241.0, 20.0 ],
                     "text": "Drag and drop sound files on waveform "
@@ -2162,9 +2197,9 @@
                                     "patching_rect": [ 355.25, 247.0, 77.0, 23.0 ],
                                     "rnbo_classname": "delay~",
                                     "rnbo_extra_attributes": {
-                                        "maxdelayms": 0.0,
                                         "interp": "linear",
-                                        "ramp": 50.0
+                                        "ramp": 50.0,
+                                        "maxdelayms": 0.0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "delay~_obj-2",
@@ -2181,11 +2216,11 @@
                                     "patching_rect": [ 55.25, 343.0, 229.0, 23.0 ],
                                     "rnbo_classname": "p",
                                     "rnbo_extra_attributes": {
-                                        "notecontroller": 0,
-                                        "polyphony": -1.0,
                                         "uidstyle": "auto",
-                                        "voicecontrol": "MIDI",
                                         "args": [],
+                                        "polyphony": -1.0,
+                                        "notecontroller": 0,
+                                        "voicecontrol": "MIDI",
                                         "receivemode": "local",
                                         "exposevoiceparams": 0
                                     },
@@ -2911,8 +2946,8 @@
                                     "patching_rect": [ 487.25, 178.0, 35.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "meta": "",
-                                        "comment": ""
+                                        "comment": "",
+                                        "meta": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "in~_obj-16",
@@ -3004,18 +3039,18 @@
                                     "patching_rect": [ 468.25, 309.0, 227.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
+                                        "exponent": 1.0,
                                         "displayorder": "-",
                                         "ctlin": 0.0,
-                                        "exponent": 1.0,
-                                        "fromnormalized": "",
-                                        "meta": "",
                                         "unit": "",
-                                        "sendinit": 1,
-                                        "enum": "",
-                                        "preset": 1,
                                         "order": "",
+                                        "fromnormalized": "",
                                         "displayname": "",
-                                        "tonormalized": ""
+                                        "preset": 1,
+                                        "tonormalized": "",
+                                        "enum": "",
+                                        "meta": "",
+                                        "sendinit": 1
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "record",
@@ -3439,8 +3474,8 @@
                                     "patching_rect": [ 105.14855072463769, 398.0, 43.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "meta": "",
-                                        "comment": ""
+                                        "comment": "",
+                                        "meta": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "out~_obj-35",
@@ -3534,9 +3569,9 @@
                                     "patching_rect": [ 55.25, 296.0, 324.0, 23.0 ],
                                     "rnbo_classname": "p",
                                     "rnbo_extra_attributes": {
-                                        "notecontroller": 0,
-                                        "polyphony": -1.0,
                                         "uidstyle": "auto",
+                                        "polyphony": -1.0,
+                                        "notecontroller": 0,
                                         "voicecontrol": "MIDI",
                                         "receivemode": "local",
                                         "exposevoiceparams": 0
@@ -3867,11 +3902,11 @@
                                     "patching_rect": [ 606.0, 68.0, 213.0, 23.0 ],
                                     "rnbo_classname": "buffer~",
                                     "rnbo_extra_attributes": {
-                                        "type": "",
-                                        "samplerate": 0.0,
                                         "fill": "",
-                                        "meta": "",
-                                        "preset": 0
+                                        "samplerate": 0.0,
+                                        "preset": 0,
+                                        "type": "",
+                                        "meta": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "buffer~_obj-23",
@@ -4259,8 +4294,8 @@
                                     "patching_rect": [ 55.25, 132.0, 33.0, 23.0 ],
                                     "rnbo_classname": "mtof",
                                     "rnbo_extra_attributes": {
-                                        "filter": 1.0,
-                                        "scalename": ""
+                                        "scalename": "",
+                                        "filter": 1.0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "mtof_obj-9",
@@ -4436,8 +4471,8 @@
                                     "patching_rect": [ 55.25, 398.0, 43.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "meta": "",
-                                        "comment": ""
+                                        "comment": "",
+                                        "meta": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "out~_obj-6",
@@ -4745,21 +4780,6 @@
                     "presentation": 1,
                     "presentation_rect": [ 283.50513875484467, 442.2680164575577, 175.0, 29.0 ],
                     "rnboattrcache": {
-                        "poly/env.adsr/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/env.adsr/sustain": {
-                            "label": "sustain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/granular/buffchan": {
-                            "label": "buffchan",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "poly/granular/basefreq": {
                             "label": "basefreq",
                             "isEnum": 0,
@@ -4770,18 +4790,8 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "record": {
-                            "label": "record",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/granular/starttime": {
-                            "label": "starttime",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "poly/granular/grainlength": {
-                            "label": "grainlength",
+                        "poly/env.adsr/decay": {
+                            "label": "decay",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -4790,8 +4800,33 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "poly/env.adsr/decay": {
-                            "label": "decay",
+                        "poly/granular/grainlength": {
+                            "label": "grainlength",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "record": {
+                            "label": "record",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/granular/buffchan": {
+                            "label": "buffchan",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/granular/starttime": {
+                            "label": "starttime",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/env.adsr/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "poly/env.adsr/sustain": {
+                            "label": "sustain",
                             "isEnum": 0,
                             "parsestring": ""
                         }
@@ -4834,30 +4869,30 @@
                                                     "value": 0.0
                                                 },
                                                 "panpos": {
-                                                    "value": 0.7728028297424316
+                                                    "value": 0.7632232904434204
                                                 },
                                                 "grainlength": {
-                                                    "value": 0.1470939815044403
+                                                    "value": 0.1348043978214264
                                                 },
                                                 "starttime": {
-                                                    "value": 0.6495348811149597
+                                                    "value": 0.6356363296508789
                                                 },
                                                 "basefreq": {
-                                                    "value": 38.49799922395889
+                                                    "value": 38.17622269237848
                                                 }
                                             },
                                             "env.adsr": {
                                                 "release": {
-                                                    "value": 4559.332934021952
+                                                    "value": 4618.340352177621
                                                 },
                                                 "sustain": {
-                                                    "value": 0.7183376550674438
+                                                    "value": 0.7062472105026245
                                                 },
                                                 "decay": {
-                                                    "value": 3374.661070108414
+                                                    "value": 3370.927528142929
                                                 },
                                                 "attack": {
-                                                    "value": 417.7505987882615
+                                                    "value": 500.46526491642004
                                                 }
                                             }
                                         }
@@ -4894,30 +4929,30 @@
                                                                 "value": 0.0
                                                             },
                                                             "panpos": {
-                                                                "value": 0.7728028297424316
+                                                                "value": 0.7632232904434204
                                                             },
                                                             "grainlength": {
-                                                                "value": 0.1470939815044403
+                                                                "value": 0.1348043978214264
                                                             },
                                                             "starttime": {
-                                                                "value": 0.6495348811149597
+                                                                "value": 0.6356363296508789
                                                             },
                                                             "basefreq": {
-                                                                "value": 38.49799922395889
+                                                                "value": 38.17622269237848
                                                             }
                                                         },
                                                         "env.adsr": {
                                                             "release": {
-                                                                "value": 4559.332934021952
+                                                                "value": 4618.340352177621
                                                             },
                                                             "sustain": {
-                                                                "value": 0.7183376550674438
+                                                                "value": 0.7062472105026245
                                                             },
                                                             "decay": {
-                                                                "value": 3374.661070108414
+                                                                "value": 3370.927528142929
                                                             },
                                                             "attack": {
-                                                                "value": 417.7505987882615
+                                                                "value": 500.46526491642004
                                                             }
                                                         }
                                                     }
