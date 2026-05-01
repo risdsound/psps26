@@ -13,13 +13,24 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-18",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 98.0, 126.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
                     "id": "obj-24",
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 460.0, 584.0, 50.0, 22.0 ],
-                    "text": "life"
+                    "text": "seeds"
                 }
             },
             {
@@ -1004,7 +1015,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 35.0, 25.0, 740.0, 27.0 ],
-                    "text": "Life matrix mixer: 16 oscillators routed to 16 panned outputs"
+                    "text": "Life matrix mixer: 16 oscillators routed to 16 panned outputs (using javascript in Max)"
                 }
             },
             {
@@ -1034,7 +1045,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 78.0, 127.0, 85.0, 20.0 ],
+                    "patching_rect": [ 45.0, 101.0, 85.0, 20.0 ],
                     "text": "run Life"
                 }
             },
@@ -1418,6 +1429,12 @@
                 "patchline": {
                     "destination": [ "obj-23", 0 ],
                     "source": [ "obj-17", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 1 ],
+                    "source": [ "obj-18", 0 ]
                 }
             },
             {
