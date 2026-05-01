@@ -9,8 +9,30 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 140.0, 95.0, 923.0, 853.0 ],
+        "rect": [ 326.0, 87.0, 923.0, 853.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-5",
+                    "maxclass": "newobj",
+                    "numinlets": 6,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 394.0, 105.0, 107.0, 22.0 ],
+                    "text": "scale 0. 1. -90. 90."
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 6,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 238.0, 105.0, 103.0, 22.0 ],
+                    "text": "scale 0. 1. 0. 360."
+                }
+            },
             {
                 "box": {
                     "id": "obj-46",
@@ -272,7 +294,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-41",
-                    "items": [ "IAC Driver Bus 1", ",", "828 MIDI", ",", "828 COM", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "IAC Driver Bus 1", ",", "BNO055_BMP280_MIDI_v2 Bluetooth", ",", "to Max 1", ",", "to Max 2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -299,6 +321,7 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 59.0, 106.0, 589.0, 697.0 ],
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -10530,7 +10553,7 @@
                     "outlettype": [ "multichannelsignal" ],
                     "patching_rect": [ 88.0, 471.0, 120.0, 22.0 ],
                     "saved_object_attributes": {
-                        "active": [ 1, 1 ],
+                        "active": [ 1 ],
                         "center_att_db": 1.0,
                         "center_curve": 0.2,
                         "center_size": 2.0,
@@ -10674,14 +10697,20 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-18", 0 ],
+                    "destination": [ "obj-4", 0 ],
+                    "source": [ "obj-39", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 0 ],
                     "source": [ "obj-39", 1 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-23", 0 ],
-                    "source": [ "obj-39", 0 ]
+                    "source": [ "obj-4", 0 ]
                 }
             },
             {
@@ -10713,6 +10742,12 @@
                 "patchline": {
                     "destination": [ "obj-44", 0 ],
                     "source": [ "obj-46", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-18", 0 ],
+                    "source": [ "obj-5", 0 ]
                 }
             },
             {
